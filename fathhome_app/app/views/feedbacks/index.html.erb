@@ -8,7 +8,8 @@
       <th>Recommend?</th>
       <th>Friend</th>
       <th>Clean</th>
-      <th>Feedback</th>
+      <th>Remarks</th>
+      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +20,8 @@
         <td><%= feedback.recommend? %></td>
         <td><%= feedback.friend %></td>
         <td><%= feedback.clean %></td>
-        <td><%= feedback.feedback %></td>
+        <td><%= feedback.remarks %></td>
+        <td><%= feedback.user %></td>
         <td><%= link_to 'Show', feedback %></td>
         <td><%= link_to 'Edit', edit_feedback_path(feedback) %></td>
         <td><%= link_to 'Destroy', feedback, method: :delete, data: { confirm: 'Are you sure?' } %></td>

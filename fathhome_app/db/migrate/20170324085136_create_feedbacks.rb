@@ -4,7 +4,8 @@ class CreateFeedbacks < ActiveRecord::Migration[5.0]
       t.boolean :recommend?
       t.integer :friend
       t.integer :clean
-      t.string :feedback
+      t.string :remarks
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

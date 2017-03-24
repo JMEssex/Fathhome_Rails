@@ -12,23 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :recommend? %>
-    <%= f.check_box :recommend? %>
+    <%= f.label "Would You Recomend This Product To A Friend? (Yes or No?)"%>
+    <%= f.check_box :recommend? %> " ← Click Here For Yes!
+  </div>
+    <br><br>
+  <div class="field">
+    <%= f.label "How Likely Would You Recomend This Product To A Friend (1 to 10)"  %>
+    <br>
+    Not Likely - 1  <%= f.range_field :friend, :min=>1, :max=>10, :class=>"slide", :id=>"slider1" %> 10 - Calling A Friend Now!
   </div>
 
   <div class="field">
-    <%= f.label :friend %>
-    <%= f.number_field :friend %>
+    <%= f.label "Why?" %>
+    <%= f.text_area :remarks %>
   </div>
 
   <div class="field">
-    <%= f.label :clean %>
-    <%= f.number_field :clean %>
+    <%= f.label "How Clean Do They Feel? (1 to 10)" %>
+    No Difference - 1  <%= f.range_field :clean, :min=>1, :max=>10, :class=>"slide", :id=>"slider1" %> 10 - WOW Super Clean!
   </div>
 
   <div class="field">
-    <%= f.label :feedback %>
-    <%= f.text_field :feedback %>
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
   </div>
 
   <div class="actions">

@@ -16,9 +16,16 @@
 </p>
 
 <p>
-  <strong>Feedback:</strong>
-  <%= @feedback.feedback %>
+  <strong>Remarks:</strong>
+  <%= @feedback.remarks %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @feedback.user %>
 </p>
 
 <%= link_to 'Edit', edit_feedback_path(@feedback) %> |
-<%= link_to 'Back', feedbacks_path %>
+<%= link_to 'Write Another Feedback?', new_feedbacks_path %> |
+
+<%= link_to 'New Person' new_users_path %>
